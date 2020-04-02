@@ -17,10 +17,10 @@ class theme_data {
     primaryTextTheme: TextTheme(
         title: TextStyle(fontSize: _primary_font_size, color: Colors.white)),
     textTheme: TextTheme(
-        body1: TextStyle(fontSize: body_text_font, color: Colors.black54),
-        display1: TextStyle(fontSize: normal_text_font),
-        display2: TextStyle(fontSize: middle_text_font),
-        display3: TextStyle(fontSize: large_text_font)),
+        body1: TextStyle(fontSize: body_text_font, color: Colors.black87),
+        display1: TextStyle(fontSize: normal_text_font,color: Colors.black87),
+        display2: TextStyle(fontSize: middle_text_font,color: Colors.black87),
+        display3: TextStyle(fontSize: large_text_font,color: Colors.black87)),
   );
 
   //暗黑模式

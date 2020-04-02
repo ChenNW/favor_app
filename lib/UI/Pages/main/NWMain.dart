@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutterfavorapp/UI/Pages/main/initialize_page.dart';
 
 
 class NWMainPage extends StatefulWidget {
@@ -9,14 +10,24 @@ class NWMainPage extends StatefulWidget {
 }
 
 class _NWMainPageState extends State<NWMainPage> {
+  int _currentindex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home),title: Text('首页')),
-        BottomNavigationBarItem(icon: Icon(Icons.star),title: Text('收藏'))
-      ]),
+      body: IndexedStack(
+        index: _currentindex,
+        children: pages,
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+         items: items,
+        unselectedFontSize: 14,
+        currentIndex: _currentindex,
+        onTap: (index){
+           setState(() {
+             _currentindex = index;
+           });
+        },
+      ),
 
     );
   }
