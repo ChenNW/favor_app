@@ -15,7 +15,8 @@ class home_category_model {
 
     //转16进制
    final ColorInt =  int.parse(color,radix: 16);
-   CCorlor = Color(ColorInt|0xFF000000);
+   //将透明度加进去
+   CCorlor = Color(0xFF000000|ColorInt);
 
   }
 
