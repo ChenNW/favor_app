@@ -7,7 +7,7 @@ class theme_data {
   static const double normal_text_font = 16;
   static const double middle_text_font = 18;
   static const double large_text_font = 20;
-
+  static const double Xlarge_text_font = 22;
   //亮色模式
   static final ThemeData lightTheme = ThemeData(
     primarySwatch: Colors.pink,
@@ -21,7 +21,10 @@ class theme_data {
         body1: TextStyle(fontSize: body_text_font, color: Colors.black87),
         display1: TextStyle(fontSize: normal_text_font,color: Colors.black87),
         display2: TextStyle(fontSize: middle_text_font,color: Colors.black87),
-        display3: TextStyle(fontSize: large_text_font,color: Colors.black87)),
+        display3: TextStyle(fontSize: large_text_font,color: Colors.black87),
+        display4: TextStyle(fontSize: Xlarge_text_font,color: Colors.black87),
+    ),
+
   );
 
   //暗黑模式
