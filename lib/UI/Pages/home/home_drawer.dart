@@ -29,7 +29,7 @@ class home_drawer extends StatelessWidget {
 
 Widget topContainer(BuildContext context) {
   return Container(
-    height: 145.Pt,
+    height: 125.Pt,
     width: double.infinity,
     color: Colors.amber,
     child: Text(
