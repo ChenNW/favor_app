@@ -13,6 +13,7 @@ class theme_data {
     primarySwatch: Colors.pink,
     highlightColor: Colors.transparent,
     splashColor: Colors.transparent,
+    accentColor: Colors.amber,
     canvasColor: Color.fromRGBO(255, 254, 222, 1), //背景色
     primaryTextTheme: TextTheme(
         title: TextStyle(fontSize: _primary_font_size, color: Colors.white)),
