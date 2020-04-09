@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutterfavorapp/UI/Pages/home/home_drawer.dart';
 import 'package:flutterfavorapp/UI/Pages/main/initialize_page.dart';
 
 
@@ -28,6 +29,7 @@ class _NWMainPageState extends State<NWMainPage> {
            });
         },
       ),
+      drawer: home_drawer(),
 
     );
   }
