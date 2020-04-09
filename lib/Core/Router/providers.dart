@@ -1,6 +1,7 @@
 
 import 'package:flutterfavorapp/UI/Pages/Unknown_page/unknown_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterfavorapp/UI/Pages/filter/filter_screen.dart';
 import 'package:flutterfavorapp/UI/Pages/main/NWMain.dart';
 import 'package:flutterfavorapp/UI/Pages/meal/meal_screen.dart';
 import 'package:flutterfavorapp/UI/Pages/meal_detail/meal_detail.dart';
@@ -15,10 +16,13 @@ class NWProviders {
 
   };
 
+  //自定义跳转路由
+  static final RouteFactory generateRoute = (settings){
+    return null;
+  };
 
   //unkonwn_page
-
-  static final RouteFactory NwUnkonwn_page =(setting){
+  static final RouteFactory NwUnkonwn_page =(settings){
     return MaterialPageRoute(builder: (ctx) => unKnown_page());
   };
 

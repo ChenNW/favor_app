@@ -1,6 +1,7 @@
 
 import 'package:flutterfavorapp/Extension/int_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterfavorapp/UI/Pages/filter/filter_screen.dart';
 
 class home_drawer extends StatelessWidget {
   @override
@@ -16,9 +17,12 @@ class home_drawer extends StatelessWidget {
             }),
 
             icon_button(Icon(Icons.settings), '过滤', context, (){
-
+              Navigator.of(context).push(MaterialPageRoute(builder: (context){
+                return NWFilter_screen();
+              },
+              fullscreenDialog: true
+              ));
             })
-
 
           ],
         ),

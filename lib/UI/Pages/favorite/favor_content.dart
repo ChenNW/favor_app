@@ -9,6 +9,8 @@ class favor_content extends StatelessWidget {
     return Consumer<favorMealsViewModel>(
       builder: (ctx,favorVM,child){
 
+        if(favorVM.favorMeals.length == 0) return Center(child: Text('暂无收藏'),);
+
         return ListView.builder(
           itemCount: favorVM.favorMeals.length,
           itemBuilder: (ctx, index) {
